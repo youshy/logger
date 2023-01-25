@@ -38,7 +38,7 @@ func NewLogger(level string, isJSON bool) *zap.SugaredLogger {
 		config.Encoding = "console"
 	}
 
-	switch level {
+	switch strings.ToUpper(level) {
 	case DEBUG:
 		config.Level = zap.NewAtomicLevelAt(zapcore.DebugLevel)
 		config.EncoderConfig.CallerKey = "caller"
