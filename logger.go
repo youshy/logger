@@ -2,6 +2,7 @@ package logger
 
 import (
 	"log"
+	"strings"
 
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
